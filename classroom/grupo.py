@@ -15,10 +15,10 @@ class Grupo:
 
     def listadoAsignaturas(self, **kwargs):
         if self._asignaturas is None:
-            self._asignaturas= dict()
+            self._asignaturas = dict()
 
         for k, v in kwargs.items():
-            self._asignaturas[k]=Asignatura(v)
+            self._asignaturas[k] = Asignatura(v)
 
     def agregarAlumno(self, alumno, lista=None):
         if(lista is None):
