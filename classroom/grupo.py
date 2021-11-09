@@ -15,7 +15,7 @@ class Grupo:
 
     def listadoAsignaturas(self, **kwargs):
         if self._asignaturas is None:
-            self._asignaturas= {}
+            self._asignaturas= dict()
 
         for k, v in kwargs.items():
             self._asignaturas[k]=Asignatura(v)
